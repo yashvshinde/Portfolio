@@ -26,8 +26,10 @@ menuBtn.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
-    const scrollBtn = document.getElementById('scroll-up-btn');
-    scrollBtn.classList.toggle("show");
+    if(window.scrollY > 500){
+        const scrollBtn = document.getElementById('scroll-up-btn');
+        scrollBtn.classList.toggle("show");
+    }
 })
 
 let links = menu.querySelector('li');
@@ -83,3 +85,13 @@ links.addEventListener('click',() =>{
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
 })
+
+
+/*Media Queries*/
+
+let x = window.matchMedia('(max-width: 768px)');
+if(x.matches){
+    const p = document.getElementById('school');
+    p.innerText += document.write("<br>");
+    p.innerText += document.write("<br>");
+}

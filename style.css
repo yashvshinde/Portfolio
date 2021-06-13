@@ -582,6 +582,20 @@ footer span a:hover{
         margin-left: 0px;
     }
 }
+
+
+@media(max-width: 1024px){
+
+    .education .education-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+
+    .project .project-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
 @media(max-width: 1104px){
     .about .about-content .left img{
         height: 350px;
@@ -673,6 +687,14 @@ footer span a:hover{
     }
 }
 
+@media(max-width: 768px){
+    .education .education-content .card{
+        max-height: 70%;
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+
 @media(max-width: 690px){
     .max-width{
         padding: 0 23px;
@@ -698,18 +720,20 @@ footer span a:hover{
         width: 100%;
     }
 
+    .about{
+        margin-bottom: 30%;
+    }
+
     .project{
-        margin-top: 15%;
-        margin-bottom: -15%;
         height: 165vh;
+    }
+    
+    .skills{
+        margin-bottom: 30%;
     }
 }
 
 @media(max-width: 500px){
-    .education{
-        margin-top: 15%;
-        height: 142vh;
-    }
     .home .home-content .text2{
         font-size: 50px;
     }
@@ -720,4 +744,26 @@ footer span a:hover{
     .hello{
         margin-top: 20%;
     }
+    .about{
+        margin-bottom: 70%;
+    }
+    .education{
+        height: 175vh;
+    }
+
+    .skills{
+        margin-bottom: 50%;
+    }
+
+    .project{
+        height: 180vh;
+    }
 }
+
+@media(max-width: 425px){
+    .education{
+        margin-top: 15%;
+        height: 180vh;
+    }
+}
+
