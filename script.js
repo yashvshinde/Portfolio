@@ -88,10 +88,14 @@ links.addEventListener('click',() =>{
 
 
 /*Media Queries*/
-
+/*
 let x = window.matchMedia('(max-width: 768px)');
 if(x.matches){
     const p = document.getElementById('school');
-    p.innerText += document.write("<br>");
-    p.innerText += document.write("<br>");
+    p.style.paddingBottom = "20px";
 }
+else{
+    const p = document.getElementById('school');
+    p.style.paddingBottom = "0px";
+}
+*/

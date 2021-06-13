@@ -693,6 +693,10 @@ footer span a:hover{
         width: calc(50% - 10px);
         margin-bottom: 20px;
     }
+
+    #school{
+        padding-bottom: 20px;
+    }
 }
 
 @media(max-width: 690px){
