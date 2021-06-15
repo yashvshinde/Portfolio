@@ -762,12 +762,40 @@ footer span a:hover{
     .project{
         height: 180vh;
     }
+
+    .contact{
+        margin-top: -15%;
+    }
 }
 
 @media(max-width: 425px){
     .education{
         margin-top: 15%;
-        height: 180vh;
+        height: 175vh;
+    }
+
+    .project{
+        height: 165vh;
+    }
+
+    .contact{
+        margin-top: -15%;
     }
 }
+
+@media(max-width: 320px){
+    .education{
+        margin-top: 15%;
+        height: 170vh;
+    }  
+
+    .project{
+        height: 155vh;
+    }
+
+    .contact{
+        margin-top: -15%;
+    }
+}
+
 
