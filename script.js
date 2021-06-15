@@ -21,11 +21,21 @@ window.addEventListener('scroll',() =>{
 const menuBtn = document.getElementById('menu-btn');
 const menu = document.getElementById('menu');
 const icon = menuBtn.querySelector('i');
+const body = document.body;
+
 menuBtn.addEventListener('click',() =>{
     menu.classList.toggle("active");
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
+    else{
+        body.classList.add("stop-scrolling");
+    }
+
     if(window.scrollY > 500){
         const scrollBtn = document.getElementById('scroll-up-btn');
         scrollBtn.classList.toggle("show");
@@ -39,6 +49,10 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
 links = links.nextElementSibling;
@@ -48,6 +62,10 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
 links = links.nextElementSibling;
@@ -57,6 +75,10 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
 links = links.nextElementSibling;
@@ -66,6 +88,10 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
 links = links.nextElementSibling;
@@ -75,6 +101,10 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
 links = links.nextElementSibling;
@@ -84,5 +114,9 @@ links.addEventListener('click',() =>{
     menu.classList.toggle("navbarmenu");
     icon.classList.toggle("fa-bars");
     icon.classList.toggle("fa-times");
+
+    if(body.classList.contains("stop-scrolling")){
+        body.classList.remove("stop-scrolling");
+    }
 })
 
